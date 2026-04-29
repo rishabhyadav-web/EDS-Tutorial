@@ -18,6 +18,9 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --agents-orange-strong: #ef8f2c;
+  --agents-orange-soft: #f6b26c;
+  --agents-cream: #f8efe8;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -322,4 +325,69 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.agents-business-functions {
+  margin: 0;
+  padding: 56px 0 118px;
+  background:
+    radial-gradient(circle at 18% 14%, rgb(255 255 255 / 20%) 0 1px, transparent 2px),
+    radial-gradient(circle at 34% 20%, rgb(255 255 255 / 18%) 0 1px, transparent 2px),
+    radial-gradient(circle at 66% 16%, rgb(255 255 255 / 16%) 0 1px, transparent 2px),
+    radial-gradient(circle at 82% 10%, rgb(255 255 255 / 18%) 0 1px, transparent 2px),
+    linear-gradient(180deg, #df7417 0%, #ef922f 40%, #f7b67d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+main .section.agents-business-functions > div {
+  position: relative;
+  z-index: 1;
+}
+
+main .section.agents-business-functions h1,
+main .section.agents-business-functions h2,
+main .section.agents-business-functions h3 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #fff;
+  text-align: center;
+  text-wrap: balance;
+}
+
+main .section.agents-business-functions::before,
+main .section.agents-business-functions::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  pointer-events: none;
+}
+
+main .section.agents-business-functions::before {
+  top: 0;
+  height: 100%;
+  background:
+    radial-gradient(circle at 10% 22%, rgb(255 255 255 / 18%) 0 1px, transparent 2px),
+    radial-gradient(circle at 22% 10%, rgb(255 255 255 / 14%) 0 1px, transparent 2px),
+    radial-gradient(circle at 72% 18%, rgb(255 255 255 / 14%) 0 1px, transparent 2px),
+    radial-gradient(circle at 90% 30%, rgb(255 255 255 / 16%) 0 1px, transparent 2px);
+  opacity: 0.8;
+}
+
+main .section.agents-business-functions::after {
+  inset-block: auto -28px;
+  height: 76px;
+  background:
+    radial-gradient(60px 34px at 6% 0, #f7efe9 98%, transparent 100%),
+    radial-gradient(82px 42px at 20% 0, #f7efe9 98%, transparent 100%),
+    radial-gradient(76px 38px at 40% 0, #f7efe9 98%, transparent 100%),
+    radial-gradient(88px 44px at 62% 0, #f7efe9 98%, transparent 100%),
+    radial-gradient(74px 38px at 82% 0, #f7efe9 98%, transparent 100%),
+    radial-gradient(58px 32px at 96% 0, #f7efe9 98%, transparent 100%);
+}
+
+main .section.agents-support {
+  margin: 0;
+  padding: 72px 0;
+  background-color: var(--agents-cream);
 }
