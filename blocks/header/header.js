@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoContainer = document.createElement('div');
     logoContainer.className = 'su-logo';
     logoContainer.innerHTML = `
-        <img src="https://www.searchunify.com/wp-content/uploads/2022/01/su-logo.svg" alt="SearchUnify Logo">
+        <img src="https://www.searchunify.com/wp-content/uploads/2021/04/searchunify-logo.webp" alt="SearchUnify Logo">
     `;
 
     // Navigation Links
